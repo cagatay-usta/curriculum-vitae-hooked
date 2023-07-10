@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.app {
+  display: flex;
+
+}
+
+#input-form-container, #display-form-container {
+  width: 595px;
+  border: 1px solid darkblue;
+  padding: 1rem;
+  margin: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 80%;
+  margin: .3rem;
+}
