@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import React, { useState } from "react";
 import InputForm from "./components/inputForm";
 import DisplayForm from "./components/displayForm";
 import "./styles/index.css";
@@ -70,7 +70,7 @@ function App() {
         return { ...prevState, [category]: newCategory };
       });
     }
-  };
+  }
 
   function buttonHandler(e) {
     const [type, category] = e.target.getAttribute("data-category").split("-");
