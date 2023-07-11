@@ -22,3 +22,7 @@ input {
   width: 80%;
   margin: .3rem;
 }
+
+#display-form-container {
+  gap: .3rem;
+}
