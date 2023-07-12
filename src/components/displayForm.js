@@ -4,13 +4,13 @@ function DisplayForm(props) {
   const { personal, work, education } = props;
   return (
     <div id="display-form-container">
-      <div id="personal-display-container">
+      <div id="personal-display-container" className="display-container">
         {Object.values(personal).map((item, index) => {
           return <div key={index}>{item}</div>;
         })}
       </div>
 
-      <div id="work-display-container">
+      <div id="work-display-container" className="display-container">
         {work.map((listItem, index) => {
           return Object.values(listItem).map((item, number) => {
             return <div key={number}>{item}</div>;
@@ -18,7 +18,7 @@ function DisplayForm(props) {
         })}
       </div>
 
-      <div id="education-display-container">
+      <div id="education-display-container" className="display-container">
         {education.map((listItem, index) => {
           return Object.values(listItem).map((item, number) => {
             return <div key={number}>{item}</div>;

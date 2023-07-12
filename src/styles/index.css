@@ -11,7 +11,8 @@ body {
 #input-form-container, #display-form-container {
   width: 595px;
   border: 1px solid darkblue;
-  padding: 1rem;
+  border-radius: .3rem;
+  padding: 2rem;
   margin: 2rem;
 
   display: flex;
@@ -24,5 +25,23 @@ input {
 }
 
 #display-form-container {
+  gap: 1rem;
+}
+
+.display-container {
+  display: flex;
+  flex-direction: column;
   gap: .3rem;
+}
+
+#personal-display-container div:first-child {
+  color: #00356B;
+  font-size: 2rem;
+}
+
+#personal-display-container div:nth-child(2) {
+  color: rgb(38, 178, 248)
+}
+#personal-display-container > div {
+  color: gray
 }
